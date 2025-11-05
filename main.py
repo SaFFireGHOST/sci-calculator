@@ -1,6 +1,6 @@
 import argparse
 from calculator import sqrt, factorial, ln, power
-
+# interactive menu
 def interactive():
     menu = """\nScientific Calculator
 1) sqrt(x)
@@ -32,7 +32,6 @@ def interactive():
                 print("Invalid choice")
         except Exception as e:
             print("Error:", e)
-
 def cli():
     parser = argparse.ArgumentParser()
     parser.add_argument("--op", choices=["sqrt","fact","ln","pow"], help="operation")
