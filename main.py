@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import argparse
 from calculator import sqrt, factorial, ln, power
 
