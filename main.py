@@ -1,6 +1,6 @@
 import argparse
 from calculator import sqrt, factorial, ln, power
-# interactive menu
+# this is interactive menu
 def interactive():
     menu = """\nScientific Calculator
 1) sqrt(x)
