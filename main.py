@@ -32,6 +32,8 @@ def interactive():
                 print("Invalid choice")
         except Exception as e:
             print("Error:", e)
+            
+# command line interface  
 def cli():
     parser = argparse.ArgumentParser()
     parser.add_argument("--op", choices=["sqrt","fact","ln","pow"], help="operation")
@@ -49,6 +51,7 @@ def cli():
             print(ln(args.x))
         elif args.op == "pow":
             print(power(args.x, args.b))
+
 
 if __name__ == "__main__":
     cli()
